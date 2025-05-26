@@ -4,20 +4,20 @@
 flowchart TD
     Start([Start Game])
     Generate[Generate a random number]
-    Prompt[Prompt user to guess a number]
-    Validate{Is input a number?}
-    Invalid[Show error and prompt again]
+    AskGuess[Ask user to guess a number]
+    Validate{Is the input a number?}
+    Invalid[Show that the input is invalid and prompt again]
     Compare{Is guess correct?}
     TooLow[Output: "Too Low"]
     TooHigh[Output: "Too High"]
     Correct[Output: "Correct!"]
     End([End Game])
 
-    Start --> Generate --> Prompt --> Validate
-    Validate -- No --> Invalid --> Prompt
+    Start --> Generate --> AskGuess --> Validate
+    Validate -- No --> Invalid --> AskGuess
     Validate -- Yes --> Compare
-    Compare -- Too Low --> TooLow --> Prompt
-    Compare -- Too High --> TooHigh --> Prompt
+    Compare -- Too Low --> TooLow --> AskGuess
+    Compare -- Too High --> TooHigh --> AskGuess
     Compare -- Correct --> Correct --> End
 ```
 Description of Game Flow
