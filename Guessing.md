@@ -20,7 +20,7 @@ flowchart TD
     Compare -- Too High --> TooHigh --> AskGuess
     Compare -- Correct --> Correct --> End
 ```
-Description of Game Flow
+Description
 Start Game – The program executes.
 Generate a Random Number – A number is chosen within a set range (for example, 1-100).
 Ask Guess – The program asks the user to guess the number.
