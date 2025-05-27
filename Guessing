@@ -1,4 +1,4 @@
-# Random Guessing Game Flowchart
+ec# Random Guessing Game Flowchart
 
 ```mermaid
 flowchart TD
@@ -6,7 +6,7 @@ flowchart TD
     Generate[Generate a random number]
     AskGuess[Ask user to guess a number]
     Validate{Is the input a number?}
-    Invalid[Show that the input is invalid and prompt again]
+    Invalid[Show an error message and prompt again]
     Compare{Is guess correct?}
     TooLow[Output: "Too Low"]
     TooHigh[Output: "Too High"]
@@ -21,13 +21,13 @@ flowchart TD
     Compare -- Correct --> Correct --> End
 ```
 Description of Game Flow
-Start Game – The program begins execution.
-Generate a Random Number – A number is chosen within a set range (e.g., 1–100).
-Prompt User – The program asks the user to guess the number.
+Start Game – The program executes.
+Generate a Random Number – A number is chosen within a set range (for example, 1-100).
+Ask Guess – The program asks the user to guess the number.
 Validate Input – It checks if the input is a number.
-If the input is invalid (e.g., text or symbol), an error message is shown and the prompt repeats.
+If the input is invalid (anything that is not a number 1-100), an error message is shown and the prompt repeats.
 Compare Guess – If valid, the guess is compared with the random number:
 If too low: display "Too Low" and prompt again.
 If too high: display "Too High" and prompt again.
 If correct: display "Correct!" and end the game.
-End Game – The game exits after a correct guess.
+End Game – The game ends after a correct guess.
