@@ -8,9 +8,9 @@ flowchart TD
     Validate{Is the input a number?}
     Invalid[Show an error message and prompt again]
     Compare{Is guess correct?}
-    TooLow[Output: "Too Low"]
-    TooHigh[Output: "Too High"]
-    Correct[Output: "Correct!"]
+    TooLow[Output: Too Low]
+    TooHigh[Output: Too High]
+    Correct[Output: Correct!]
     End([End Game])
 
     Start --> Generate --> AskGuess --> Validate
